@@ -1,0 +1,67 @@
+.card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 1.25rem;
+  border: 1px solid #334155;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid;
+}
+
+.name { font-weight: 800; font-size: 1rem; letter-spacing: 0.05em; }
+.hitRate { font-size: 1.1rem; font-weight: 700; }
+
+.stats { display: flex; gap: 1rem; justify-content: space-between; }
+
+.stat { display: flex; flex-direction: column; align-items: center; gap: 2px; flex: 1; }
+.statVal { font-size: 1.3rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.statLabel { font-size: 0.7rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; }
+
+.barTrack { height: 6px; background: #334155; border-radius: 3px; overflow: hidden; }
+.barFill { height: 100%; border-radius: 3px; transition: width 0.3s ease; }
+
+.cacheLabel { font-size: 0.72rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; }
+
+.cacheSlots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.slot {
+  width: 36px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  transition: background 0.2s;
+}
+
+.access {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  padding-top: 0.25rem;
+  border-top: 1px solid #334155;
+}
+
+.hit { color: #10b981; font-weight: 700; }
+.miss { color: #ef4444; font-weight: 700; }
+.evict { color: #f59e0b; font-size: 0.75rem; }
+
+.empty { color: #475569; font-size: 0.85rem; text-align: center; padding: 1rem 0; }
