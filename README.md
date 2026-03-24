@@ -45,7 +45,3 @@ Uniform random access is the worst case for caching — in practice, Zipf distri
 - Recharts (hit rate chart)
 - CSS Modules
 - All cache algorithms implemented from scratch
-
-## Motivation
-
-Built while studying OS page replacement algorithms at PES University. The goal was to understand the practical performance trade-offs between policies on realistic (Zipf-distributed) access patterns — as opposed to the worst-case traces typically used in textbook examples.
